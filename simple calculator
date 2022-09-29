@@ -1,0 +1,33 @@
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+   float a,b,c;
+    char d;
+    printf("Enter the operator(+,-,*,/,p):");
+    scanf("%c",&d);
+    printf("enter first number:");
+    scanf("%f",&a);
+    printf("enter second number:");
+    scanf("%f",&b);
+    switch(d){
+        case '+' : c=a+b;
+          printf("\n Addition :%.1f",c);
+          break;
+        case '-' : c=a-b;
+          printf("\n Subtraction :%.1f",c);
+          break;
+        case '*' : c=a*b;
+          printf("\nMultiplication:%.1f",c);
+          break;
+        case '/' : c=a/b;
+          printf("\n Division :%.1f",c);
+          break;
+        case 'p' : c=pow(a,b);
+          printf("\nPOWER  :%.1f",c);
+          break;
+          
+        default :printf("choose valid operator.");
+    }
+}
